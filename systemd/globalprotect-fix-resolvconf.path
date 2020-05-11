@@ -1,0 +1,9 @@
+[Unit]
+Description=fix /etc/resolv.conf after globalprotect overwrites it
+
+[Path]
+PathChanged=/etc/resolv.conf
+Unit=globalprotect-fix-resolvconf.service
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=fix /etc/resolv.conf after globalprotect overwrites it
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "if diff -q /opt/paloaltonetworks/globalprotect/network/config/resolv.conf /etc/resolv.conf &> /dev/null ; then cp /opt/paloaltonetworks/globalprotect/network/config/resolv.conf.orig /etc/resolv.conf; fi"
+
+[Install]
+WantedBy=multi-user.target
