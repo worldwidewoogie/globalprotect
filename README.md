@@ -21,7 +21,7 @@ I use Gnome, so the first thing I did was look for a Gnome Shell Extension that 
 
 This gives me an easy way to both see the status, and start and stop the VPN from Gnome.
 
-I have submitted this to [https://extensions.gnome.org](https://extensions.gnome.org).
+You can install the extension by going to [https://extensions.gnome.org/extension/3106/woogies-globalprotect-extension/](https://extensions.gnome.org/extension/3106/woogies-globalprotect-extension/).
 
 ## systemd path and service
 
